@@ -1,0 +1,108 @@
+1907704934:AAHOolKyKfB6JvYON12oAbn4-ZwUmpss7-0
+# api_id = 7246436
+# api_hash = '60d6c9dc987363673fbfc54a74f9014a'
+# # token = '1907704934:AAHOolKyKfB6JvYON12oAbn4-ZwUmpss7-0'
+
+
+[-541760237, -513149268]
+
+
+7715590
+
+b2f08196fb4d603735f9faa8d0d682a5
+
+7366317
+e03694d64005481b574b009f67a933d7
+
+
+#     # if (event.raw_text == "join_group" and event.chat_id not in IDlist):
+# 	# 	IDlist.append(event.chat_id)
+# 	# 	print(IDlist)
+
+
+# async def start(id_list, timeGiven):
+#     while status:
+#         for i in id_list:
+#             await client.send_message(i, message)
+#             time.sleep(timeGiven)
+
+
+#    if (chatId not in IDlist):
+# 	   chatId
+
+    # receiver user_id and access_hash, use
+    # my user_id and access_hash for reference
+# 	receiver = InputPeerUser('user_id', 'user_hash')
+
+# 	# sending message using telegram client
+# 	client.send_message(receiver, message, parse_mode='html')
+# except Exception as e:
+
+# 	# there may be many error coming in while like peer
+# 	# error, wwrong access_hash, flood_error, etc
+# 	print(e);
+
+
+
+
+# print("""\nNOTE : You can also add groups by sending "join_group" message in required group""")
+
+
+
+
+# await client.send_message(i, message)
+# @client.on(events.NewMessage)
+# async def handler(event):
+#     while True:
+#         for i in IDlist:
+#             await client.send_message(i, message)
+#             time.sleep(timeInterval)
+
+
+
+
+
+
+
+
+
+    # await client.disconnect()
+    # update.message.reply_text("Enter the verification code sent on phone")
+    # return CODE
+
+    # except:
+    #     update.message.reply_text("Problem sending the verification code.\nMake sure API ID, HASH ID and Phone Number is of same account and are correct.")
+    #     update.message.reply_text("Enter the phone number again and remember to put country code.\n\n# To Change API id or hash id, enter '/change'. ")
+    #     return  PHONE
+    # print(a) 
+
+# async def verify_code(update: Update, context: CallbackContext):
+#     global connected
+#     client = TelegramClient('session'+str(session_id), api_id, api_hash,loop = loop)
+#     await client.connect()
+#     print("CODE: ", code, " TYPE : ", type(code))
+
+#     await client.sign_in(phone, code,phone_code_hash=code_hash)
+#     update.message.reply_text("Connected Successfully....")
+#     update.message.reply_text(
+#     """Hello, \n1. Enter "/add" to add and remove groups\n2. Enter "/message" to set message\n3. Enter "/time" to set time interval\n4. Enter "/send" to start sending messages.\n3. Enter "/stop" to stop sending messages.\n\nNOTE :Enter "/change" to login with different account.""")
+#     await client.disconnect()
+#     print("returned CMD")
+#     connected = True
+#     return CMD
+    # try:
+    #     await client.sign_in(phone, code,phone_code_hash=code_hash)
+    #     update.message.reply_text("Connected Successfully....")
+    #     update.message.reply_text(
+    #     """Hello, \n1. Enter "/add" to add and remove groups\n2. Enter "/message" to set message\n3. Enter "/time" to set time interval\n4. Enter "/send" to start sending messages.\n3. Enter "/stop" to stop sending messages.\n\nNOTE :Enter "/change" to login with different account.""")
+
+    #     await client.disconnect()
+        # print("returned CMD")
+    #     return CMD
+    
+    # except:
+    #     update.message.reply_text("""Enter Correct Code.\n\n# To change phone number enter "/phone". """)
+    #     client.disconnect()
+        # print("CODE : ", code)
+    #     return CODE
+    # return connect_client_to_server
