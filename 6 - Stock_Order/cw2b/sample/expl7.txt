@@ -1,0 +1,2 @@
+A market order is matched with a limit order.
+The execution price is determined by the buying limit price.

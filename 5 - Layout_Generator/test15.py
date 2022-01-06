@@ -63,6 +63,7 @@ def layoutConst(a, w, h):
         sumA = 0
         for i in LC[j]:
             sumA = sumA + a[i-1]
+        print(f"\nSum  for j = {j}: ", sumA)
 
         if ori[j] == 0:  # Vertical
 
@@ -93,20 +94,26 @@ def layoutConst(a, w, h):
         print(f"ul[{i+1}] : ", ul[i])
         print("\n")
 
-    plt.figure(1)
-    plt.xlim([0, w])
-    plt.ylim([0, h])
-    for i in range(n):
-        rectangle = plt.Rectangle(
-            (ul[i][0], lr[i][1]), lr[i][0]-ul[i][0], ul[i][1]-lr[i][1], fc='green', ec="red")
+        b = (lr[i][0]-ul[i][0])
+        h = (ul[i][1]-lr[i][1])
+        
+        print(f"Required Area for department {fs[i]}: ",b*h)
 
-        t1 = ul[i][0] + ((lr[i][0]-ul[i][0])/2)
-        t2 = lr[i][1] + ((ul[i][1]-lr[i][1])/2)
 
-        plt.text(t1, t2, 'D%s' % fs[i])
+    # plt.figure(1)
+    # plt.xlim([0, w])
+    # plt.ylim([0, h])
+    # for i in range(n):
+    #     rectangle = plt.Rectangle(
+    #         (ul[i][0], lr[i][1]), lr[i][0]-ul[i][0], ul[i][1]-lr[i][1], fc='green', ec="red")
 
-        plt.gca().add_patch(rectangle)
-    plt.show()
+    #     t1 = ul[i][0] + ((lr[i][0]-ul[i][0])/2)
+    #     t2 = lr[i][1] + ((ul[i][1]-lr[i][1])/2)
+
+    #     plt.text(t1, t2, 'D%s' % fs[i])
+
+    #     plt.gca().add_patch(rectangle)
+    # plt.show()
     return
 
 

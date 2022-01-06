@@ -1,0 +1,5 @@
+order ord003 150 shares purchased at price 4.50
+order ord004 150 shares sold at price 4.50
+order ord001 50 shares purchased at price 4.25
+order ord004 50 shares sold at price 4.25
+order ord002 100 shares unexecuted

@@ -1,0 +1,4 @@
+All orders are limit and divisible.
+ord004 is matched partially to ord003 since ord003 has higher priority than 
+ord001 (lower limit price).
+The remaining quantity of ord003 is unmatched.
