@@ -1,8 +1,0 @@
-Two market orders matched.
-(ord003 despite being a market order could not be matched with ord002 because
-both are indivisible.)
-The execution price is determined by the previous transaction price.
-Since this is the first transaction, the last price (first line in the file)
-is used.
-Note that the resulting residual order now fits exactly the quantity of
-an indivisible order and is therefore matched.

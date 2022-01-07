@@ -1,4 +1,0 @@
-The difference with example 4 is that after ord004 is partially matched 
-with ord001, the remaining quantity is matched with ord003, which is also
-only partially fulfilled. Note that ord001 has higher priority than ord003
-because of its earlier arrival.

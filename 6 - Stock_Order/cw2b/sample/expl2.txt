@@ -1,2 +1,0 @@
-Shows how execution prices are determined when the two matched orders
-have different limit prices.

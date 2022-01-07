@@ -1,2 +1,0 @@
-This is same as example 3 except that it is the selling order that has
-"excess".

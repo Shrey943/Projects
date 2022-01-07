@@ -31,9 +31,9 @@ int main()
         float prevPrice = 143.43;
 
         cout << "Last trading price: " << prevPrice << endl;
-        cout << "Buy" << setw(30) << "Sell";
-        cout << setfill('-') << setw(50) << endl ;
-        cout << "\norderId "
+        cout << "Buy" << setw(30) << "Sell"<<endl;
+        cout << setfill('-') << setw(50) << "\n";
+        cout << "orderId "
              << "price"
              << " "
              << "quantity";
