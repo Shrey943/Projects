@@ -1,0 +1,77 @@
+
+Initialization phase (Initial population)
+
+3 vectors for each different layout
+How many different layouts will be in the initializitaion will be specified (Population size P)
+Consideration rate will be specified (CR)
+Adjustment rate is specified. (AR)``
+Readjustment rate is scpecified (RAR)
+Stopping criterion is specified. (for example 1000 new child)
+
+Improvisation phase
+
+There are 3 different new layout generation rules
+
+1 Random selection ( It is the same as the initialization phase’s layout generation) This happens with the probability of 1-CR
+2 Consideration (happens with probability CR) It takes 2 layouts(parents) and generate a new solution from it.  All population solutions are candidates for this. It takes the department sequence and cut point.
+
+
+
+
+
+For example we have two parents such as
+Cut point 2 1 4 3 5
+Department sequence 4 2 3 1 5 6
+
+And the other 
+Cut point 1 2 5 4 3
+Department sequence 3 2 1 6 5 4
+
+We take first two of first parent then the rest of four from the second parent (this cut is random. For example we could take first 1 from the first parent and then take the remaining from the second parent)
+
+Child Department seq becomes 4 2 1 6 5 4
+
+There is recurring number such as 4. So we take the last 4 and replace it with the number that was not in the child’s department sequence. In this example 3. If there are 2 different duplicates such as 4 and 5 we should do the replacement for those 2 numbers.
+
+So it becomes 4 2 1 6 5 3.
+
+We take the first 2 cut point from the first parent and the rest 3 from the second parent
+
+Child cut point becomes 2 1 5 4 3.
+It has no duplicates so no problem in this example. If there were duplicates, then replacement should be done as in the example of department sequence.
+
+Then cut code is selected as the same from above procedures.
+
+
+
+
+
+In the end we have a child like this
+
+Cut point sequence 2 1 5 4 3
+Department sequence 4 2 1 6 5 3
+Cut code 0 0 1 0 1
+
+3 Adjustment
+So we have the new child. It can be changed with the probability of AR. This is for local search
+
+There are 4 different Adjustment oppurtunities. 
+
+1 Two department values are exchanged.
+2. Two randomly decided cut point is selected and exchanged.
+3. One department is selected and placed and all other departments are shifted in the department sequence. For example
+
+4 2 1 6 5 3 department sequence we take 5 and put it next to 2. So new department sequence becomes
+
+4 2 5 1 6 3
+
+4. One cut point is selected and placed and all other cut points are shifted in the cut point sequence.
+
+These 4 adjustments can be made with 0.25 possibility. After that each cut code can be changed to 0 or 1. To make the local search more effective.  With probability of RAR
+After the changing of cut code the best solution occuring from it is taken. And the Objective Function Value is compared to the worst from the population and obtained child is replaced with it. 
+
+Penalty scheme:
+
+Every department has an aspect ratio but not every child are %100 oliged to these ratios. So while calculating the Objective function (u)^v 
+is multiplied with the objective function. U is a number greater than 1 and v is the number of departments that are violating the aspect ratio
+limitation.
