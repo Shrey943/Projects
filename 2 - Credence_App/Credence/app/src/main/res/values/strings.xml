@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Credences</string>
+    <string name="tab_text_1">NEW BELIEF</string>
+    <string name="tab_text_2">CREDENCES</string>
+    <string name="title_activity_main2">MainActivity2</string>
+</resources>

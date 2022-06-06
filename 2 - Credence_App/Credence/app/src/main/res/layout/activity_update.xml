@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/demand"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            app:srcCompat="@drawable/logo" />
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/belief"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+           android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto"
+            android:text="Belief"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="You've seen some new evidence."
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="How likely is it that you'd see this evidence if the belief were true?"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:paddingLeft="15dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="P(Evidence|H1)"
+            android:inputType="numberDecimal"
+    />
+
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/roboto"
+
+            android:text="How likely is it that you'd see this evidence i the belief were false?"
+
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+
+            />
+
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:paddingLeft="15dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="P(Evidence|H0)"
+            android:inputType="numberDecimal"
+ />
+
+        <Button
+            android:id="@+id/submit2"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="5dp"
+
+
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="SUBMIT"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
